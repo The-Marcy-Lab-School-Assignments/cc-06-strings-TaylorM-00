@@ -7,3 +7,16 @@ const reverseString = (str) => {
   return reversed;
 };
 console.log(reverseString("hello"));
+
+const reverseZigZagString = (str) => {
+  let reversed = "";
+  for (let i = 0; i < str.length; i++) {
+    if (i % 2 === 0) {
+      return str[i].toUpperCase();
+    } else {
+      return str[i].toLowerCase();
+    }
+  }
+  return reversed;
+};
+console.log(reverseZigZagString("hello"));
