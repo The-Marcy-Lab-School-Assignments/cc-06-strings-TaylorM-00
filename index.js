@@ -11,7 +11,7 @@ console.log(reverseString("hello"));
 const reverseZigZagString = (str) => {
   let reversed = "";
   for (let i = str.length - 1; i > -1; i--) {
-    if (i % 2 === 0) {
+    if (i % 2 !== 0) {
       reversed += str[i].toUpperCase();
     } else {
       reversed += str[i].toLowerCase();
