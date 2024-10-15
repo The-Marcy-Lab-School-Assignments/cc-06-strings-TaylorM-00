@@ -10,13 +10,15 @@ console.log(reverseString("hello"));
 
 const reverseZigZagString = (str) => {
   let reversed = "";
-  for (let i = 0; i < str.length; i++) {
+  for (let i = str.length - 1; i > -1; i--) {
     if (i % 2 === 0) {
-      return str[i].toUpperCase();
+      reversed += str[i].toUpperCase();
     } else {
-      return str[i].toLowerCase();
+      reversed += str[i].toLowerCase();
     }
   }
   return reversed;
 };
 console.log(reverseZigZagString("hello"));
+console.log(reverseZigZagString("Fellows"));
+console.log(reverseZigZagString("Code Challenge"));
